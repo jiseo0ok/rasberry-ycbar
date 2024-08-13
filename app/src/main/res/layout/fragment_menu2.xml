@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.menu2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff5ce4"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#ff0398"
+            android:fontFamily="@font/dd"
+            android:gravity="center"
+
+            android:text="레시피 추가"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="#ff5e5e"
+                            android:gravity="center"
+                            android:fontFamily="@font/dd"
+                            android:text="레시피 이름"
+                            android:textAlignment="center"
+                            android:textSize="6pt" />
+
+                        <EditText
+                            android:id="@+id/drinkname"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="2"
+                            android:fontFamily="@font/dd"
+                            android:hint="레시피 이름"
+                            android:textAlignment="center"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="5dp"
+
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="#ff5e5e"
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+                            android:text="레시피 소개"
+                            android:textAlignment="center"
+                            android:textSize="6pt" />
+
+                        <EditText
+                            android:id="@+id/drinkcontent"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:lineSpacingExtra="2sp"
+
+                            android:layout_weight="2"
+                            android:fontFamily="@font/dd"
+                            android:hint="레시피 소개"
+                            android:textAlignment="center"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+
+
+                            android:layout_weight="1"
+                            android:background="#ff5e5e"
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+                            android:text="레시피 종류"
+                            android:textAlignment="center"
+                            android:textSize="6pt" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+
+                            android:id="@+id/radioGroup">
+                            <RadioButton
+                            android:id="@+id/menu_2_kind_1"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:textSize="6pt"
+                            android:fontFamily="@font/dd"
+                            android:text="알코올" />
+
+                        <RadioButton
+                            android:id="@+id/menu_2_kind_2"
+                            android:text="논알코올"
+                            android:fontFamily="@font/dd"
+                            android:textSize="6pt"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="30dp" />
+                        <RadioButton
+                            android:id="@+id/menu_2_kind_3"
+                            android:text="DIY"
+                            android:textSize="6pt"
+
+                            android:fontFamily="@font/dd"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="30dp" />
+                        </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="#ff5e5e"
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+                            android:text="레시피 동작"
+                            android:textAlignment="center"
+                            android:textSize="6pt" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="2">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                android:layout_marginLeft="10dp"
+                             >
+
+                             <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge1"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="match_parent">
+                                <ImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/minus1"
+                                    android:text="-"
+                                    android:src="@drawable/minus"
+                                    android:layout_margin="5sp"
+                                    android:background="#7A00F4"
+                                    android:layout_height="match_parent"></ImageButton>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="모듈1 :"
+                                    android:textSize="4pt"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/dd"></TextView>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:id="@+id/action_1"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/dd"></TextView>
+
+                                <ImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/plus1"
+                                    android:gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:src="@drawable/plus"
+                                    android:layout_margin="5sp"
+                                    android:background="#7A00F4"
+                                    ></ImageButton>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge1"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/minus2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/minus"
+                                    android:layout_margin="5sp"
+                                    android:background="#7A00F4"
+                                    android:layout_weight="1"
+                                    android:text="-"></ImageButton>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:fontFamily="@font/dd"
+                                    android:gravity="center"
+                                    android:text="모듈2 :"
+                                    android:textSize="4pt"></TextView>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:gravity="center"
+                                    android:id="@+id/action_2"
+                                    android:fontFamily="@font/dd"></TextView>
+
+                                <ImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/plus2"
+                                    android:src="@drawable/plus"
+                                    android:layout_margin="5sp"
+                                    android:background="#7A00F4"
+                                    android:gravity="center"
+                                    android:textColor="#ffffff"
+
+                                    android:text="+"></ImageButton>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edge1"
+                                android:layout_marginRight="10dp"
+                                android:layout_height="match_parent">
+                                <ImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/minus3"
+                                    android:src="@drawable/minus"
+                                    android:layout_margin="5sp"
+                                    android:background="#7A00F4"
+                                    android:text="-"
+                                    android:layout_height="match_parent"></ImageButton>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="모듈3 :"
+
+                                    android:textSize="4pt"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/dd"></TextView>
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="0"
+                                    android:id="@+id/action_3"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/dd"></TextView>
+
+                                <ImageButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/plus3"
+                                    android:gravity="center"
+                                    android:src="@drawable/plus"
+                                    android:layout_margin="5sp"
+                                    android:background="#7A00F4"
+                                    android:textColor="#ffffff"
+
+                                    android:text="+"></ImageButton>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                android:layout_marginLeft="10dp"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edge1"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="match_parent">
+                                    <ImageButton
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:id="@+id/minus4"
+                                        android:src="@drawable/minus"
+                                        android:layout_margin="5sp"
+                                        android:background="#7A00F4"
+                                        android:text="-"
+                                        android:layout_height="match_parent"></ImageButton>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:text="모듈4 :"
+                                        android:textSize="4pt"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/dd"></TextView>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="0"
+                                        android:gravity="center"
+                                        android:id="@+id/action_4"
+                                        android:fontFamily="@font/dd"></TextView>
+
+                                    <ImageButton
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:id="@+id/plus4"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:src="@drawable/plus"
+                                        android:layout_margin="5sp"
+                                        android:background="#7A00F4"
+                                        android:text="+"></ImageButton>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edge1"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="match_parent">
+                                    <ImageButton
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:id="@+id/minus5"
+                                        android:src="@drawable/minus"
+                                        android:layout_margin="5sp"
+                                        android:background="#7A00F4"
+                                        android:text="-"
+                                        android:layout_height="match_parent"></ImageButton>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:text="모듈5 :"
+                                        android:textSize="4pt"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/dd"></TextView>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="0"
+                                        android:gravity="center"
+                                        android:id="@+id/action_5"
+                                        android:fontFamily="@font/dd"></TextView>
+
+                                    <ImageButton
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:id="@+id/plus5"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:src="@drawable/plus"
+                                        android:layout_margin="5sp"
+                                        android:background="#7A00F4"
+                                        android:text="+"></ImageButton>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edge1"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_height="match_parent">
+                                    <ImageButton
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:id="@+id/minus6"
+                                        android:src="@drawable/minus"
+                                        android:layout_margin="5sp"
+                                        android:background="#7A00F4"
+                                        android:text="-"
+                                        android:layout_height="match_parent"></ImageButton>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:text="모듈6 :"
+
+                                        android:textSize="4pt"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/dd"></TextView>
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:text="0"
+                                        android:gravity="center"
+                                        android:id="@+id/action_6"
+                                        android:fontFamily="@font/dd"></TextView>
+
+                                    <ImageButton
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:id="@+id/plus6"
+                                        android:gravity="center"
+                                        android:textColor="#ffffff"
+                                        android:src="@drawable/plus"
+                                        android:layout_margin="5sp"
+                                        android:background="#7A00F4"
+                                        android:text="+"></ImageButton>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/uploadphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="10"
+                        android:background="@drawable/edge"
+                        android:padding="10dp"
+                        android:src="@drawable/ras"></ImageView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="2">
+                        <Button
+                            android:id="@+id/upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:backgroundTint="#ff5e5e"
+                            android:fontFamily="@font/dd"
+
+
+                            android:text="업로드"
+                            android:textSize="6pt" />
+
+                    </LinearLayout>
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+
+
+                        android:layout_marginRight="10dp"
+
+                        android:layout_weight="1"
+
+                        android:background="@drawable/edge1"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/minus7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5sp"
+                            android:layout_weight="1"
+                            android:background="#7A00F4"
+                            android:src="@drawable/minus"
+                            android:text="-"></ImageButton>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/dd"
+
+                            android:gravity="center"
+                            android:text="얼음 :"
+                            android:textSize="5pt"></TextView>
+
+                        <TextView
+                            android:id="@+id/action_7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+                            android:text="0"></TextView>
+
+                        <ImageButton
+                            android:id="@+id/plus7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5sp"
+                            android:layout_weight="1"
+                            android:background="#7A00F4"
+                            android:gravity="center"
+                            android:src="@drawable/plus"
+                            android:text="+"
+                            android:textColor="#ffffff"></ImageButton>
+
+
+
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#27005D"
+            android:text="등록하기"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+
+</FrameLayout>

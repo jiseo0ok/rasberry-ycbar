@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffec03">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:src="@drawable/plus"
+
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/plus"
+        android:background="#ffec03"
+        android:layout_gravity="right"
+        android:backgroundTint="#ffec03"
+        />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="모듈 설정하기"
+            android:gravity="center"
+            android:fontFamily="@font/dd"
+            android:textSize="20dp"
+            android:layout_height="40dp"></TextView>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/close"
+            android:background="#ffec03"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#ffec03"
+            android:scaleType="fitXY"
+            android:src="@drawable/x" />
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+        android:id="@+id/content_srl"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/recycler_view_popup">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+</LinearLayout>

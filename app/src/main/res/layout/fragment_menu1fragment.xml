@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.menu1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="#000000"
+            app:tabTextColor="#9ea1b0">
+
+
+            <Button
+                android:id="@+id/setting_menu1"
+                android:layout_width="0dp"
+
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#E4F1FF"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/dd"
+                android:text="모듈설정"
+                android:textColor="#ffffff"
+                tools:ignore="TextContrastCheck" />
+
+            <!--<Button
+                android:id="@+id/setting_menu2"
+                android:layout_width="0dp"
+
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#E4F1FF"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/dd"
+                android:text="블루투스설정"
+                android:textColor="#ffffff" />-->
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/child_fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

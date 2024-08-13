@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.select_1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff5ce4"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="#ff0398"
+            android:fontFamily="@font/dd"
+            android:gravity="center"
+
+            android:text="메이킹"
+            android:textColor="#ffffff" />
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:backgroundTint="#ff0398"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/photo"
+                        android:background="@drawable/edge"
+                        android:padding="10dp"
+                        android:src="@drawable/ras" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:backgroundTint="#ff0398"
+
+                        android:background="@drawable/edge1">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="#ff5e5e"
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+                            android:text="레시피 이름"
+                            android:textAlignment="center"
+                            android:textSize="5pt" />
+
+                        <TextView
+                            android:id="@+id/drinkname"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="#27005D"
+
+
+
+                            android:textColor="#ffffff"
+
+                            android:layout_weight="2"
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+
+                            android:hint="레시피 이름"
+                            android:textAlignment="center"
+                            android:textSize="5pt" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="#ff5e5e"
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+                            android:text="레시피 소개"
+                            android:textAlignment="center"
+                            android:textSize="5pt" />
+
+                        <TextView
+                            android:id="@+id/drinkcontent"
+                            android:layout_width="0dp"
+
+                            android:background="#27005D"
+
+
+
+                            android:textColor="#ffffff"
+
+
+                            android:layout_weight="2"
+                            android:fontFamily="@font/dd"
+                            android:hint="레시피 소개"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:textSize="5pt" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:background="#ff5e5e"
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+                            android:text="메이킹 진행도"
+                            android:textAlignment="center"
+                            android:textSize="5pt" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progress="40"
+                            android:max="100"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:padding="10dp"
+                            android:background="#27005D"
+
+
+                            android:textColor="#ffffff"
+
+                            android:layout_weight="3"
+                            android:fontFamily="@font/dd"
+                            android:hint="레시피 소개"
+                            android:textAlignment="center"
+                            android:textSize="5pt" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/value"
+
+                            android:textColor="#ffffff"
+
+                            android:fontFamily="@font/dd"
+                            android:gravity="center"
+
+                            android:background="#27005D"
+
+                            android:hint="퍼센트"
+                            android:textAlignment="center"
+                            android:textSize="5pt"
+                            android:layout_weight="1"></TextView>
+
+
+
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:background="#ff5ce4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/dd"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:id="@+id/ehdwkr"
+                                android:padding="5dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.FragmentOne">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="#000000"
+            app:tabTextColor="#9ea1b0">
+
+
+            <Button
+                android:id="@+id/sub_menu1"
+                android:backgroundTint="#ffffff"
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="#E4F1FF"
+                android:fontFamily="@font/dd"
+                android:text="칵테일" />
+
+            <Button
+                android:id="@+id/sub_menu2"
+                android:backgroundTint="#ffffff"
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="#E4F1FF"
+                android:fontFamily="@font/dd"
+                android:text="논알코올" />
+            <Button
+                android:id="@+id/sub_menu3"
+                android:backgroundTint="#ffffff"
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:background="#E4F1FF"
+                android:fontFamily="@font/dd"
+
+                android:text="DIY" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/child_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
